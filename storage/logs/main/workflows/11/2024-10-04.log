@@ -1,0 +1,66 @@
+[32m2024-10-04 15:10:54 [info]  new event triggered, now events: 1          [39m 
+[34m2024-10-04 15:10:54 [debug] event data:                                 [39m context={"data":{"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:10:54.253Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"pending","createdById":1,"updatedById":1,"leave_status":null,"f_ik5jludznp0":1}}
+[32m2024-10-04 15:10:54 [info]  preparing execution for event               [39m 
+[32m2024-10-04 15:10:54 [info]  execution of workflow 11 created as 28      [39m 
+[32m2024-10-04 15:10:54 [info]  pending execution (28) ready to process     [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) starting...                  [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [query] for node (56)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"multiple":false,"collection":"leaves","params":{"filter":{"$and":[{"id":{"$eq":"{{$context.data.id}}"}}]},"sort":[],"page":1,"pageSize":20,"appends":[]},"failOnEmpty":false}
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [query] for node (56) finished as status: 1[39m 
+[34m2024-10-04 15:10:54 [debug] result of node                              [39m data={"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:10:54.253Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"pending","createdById":1,"updatedById":1,"leave_status":null,"f_ik5jludznp0":1}
+[34m2024-10-04 15:10:54 [debug] run next node (55)                          [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [parallel] for node (55)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"mode":"any"}
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [condition] for node (57)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"rejectOnFalse":true,"engine":"basic","calculation":{"group":{"type":"and","calculations":[{"calculator":"equal","operands":["{{$context.data.manager_approval}}","approved"]},{"calculator":"equal","operands":["{{$context.data.hr_approval}}","approved"]}]}}}
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [condition] for node (57) finished as status: -1[39m 
+[34m2024-10-04 15:10:54 [debug] result of node                              [39m 
+[34m2024-10-04 15:10:54 [debug] branch ended at node (57)                   [39m 
+[34m2024-10-04 15:10:54 [debug] not on main, recall to parent entry node (57)})[39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [parallel] for node (55)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"mode":"any"}
+[32m2024-10-04 15:10:54 [info]  execution (28) exiting with status 0        [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [condition] for node (58)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"rejectOnFalse":true,"engine":"basic","calculation":{"group":{"type":"or","calculations":[{"calculator":"equal","operands":["{{$jobsMapByNodeKey.m1fk4k4bpez.manager_approval}}","rejected"]},{"calculator":"equal","operands":["{{$jobsMapByNodeKey.m1fk4k4bpez.hr_approval}}","rejected"]}]}}}
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [condition] for node (58) finished as status: -1[39m 
+[34m2024-10-04 15:10:54 [debug] result of node                              [39m 
+[34m2024-10-04 15:10:54 [debug] branch ended at node (58)                   [39m 
+[34m2024-10-04 15:10:54 [debug] not on main, recall to parent entry node (58)})[39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [parallel] for node (55)[39m 
+[34m2024-10-04 15:10:54 [debug] config of node                              [39m data={"mode":"any"}
+[32m2024-10-04 15:10:54 [info]  execution (28) run instruction [parallel] for node (55) finished as status: -1[39m 
+[34m2024-10-04 15:10:54 [debug] result of node                              [39m data=[-1,-1]
+[34m2024-10-04 15:10:54 [debug] branch ended at node (55)                   [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) exiting with status -1       [39m 
+[32m2024-10-04 15:10:54 [info]  execution (28) finished with status: -1     [39m execution={"id":28,"context":{"data":{"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:10:54.253Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"pending","createdById":1,"updatedById":1,"leave_status":null,"f_ik5jludznp0":1}},"key":"hyxyfublqa3","eventKey":"a9486c9c-18d0-4ec8-aeae-c4180b83f452","status":-1,"workflowId":11,"updatedAt":"2024-10-04T07:10:54.300Z","createdAt":"2024-10-04T07:10:54.267Z"}
+[32m2024-10-04 15:11:17 [info]  new event triggered, now events: 1          [39m 
+[34m2024-10-04 15:11:17 [debug] event data:                                 [39m context={"data":{"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:11:17.031Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"approved","createdById":1,"updatedById":4,"leave_status":null,"f_ik5jludznp0":1}}
+[32m2024-10-04 15:11:17 [info]  preparing execution for event               [39m 
+[32m2024-10-04 15:11:17 [info]  execution of workflow 11 created as 29      [39m 
+[32m2024-10-04 15:11:17 [info]  pending execution (29) ready to process     [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) starting...                  [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [query] for node (56)[39m 
+[34m2024-10-04 15:11:17 [debug] config of node                              [39m data={"multiple":false,"collection":"leaves","params":{"filter":{"$and":[{"id":{"$eq":"{{$context.data.id}}"}}]},"sort":[],"page":1,"pageSize":20,"appends":[]},"failOnEmpty":false}
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [query] for node (56) finished as status: 1[39m 
+[34m2024-10-04 15:11:17 [debug] result of node                              [39m data={"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:11:17.031Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"approved","createdById":1,"updatedById":4,"leave_status":null,"f_ik5jludznp0":1}
+[34m2024-10-04 15:11:17 [debug] run next node (55)                          [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [parallel] for node (55)[39m 
+[34m2024-10-04 15:11:17 [debug] config of node                              [39m data={"mode":"any"}
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [condition] for node (57)[39m 
+[34m2024-10-04 15:11:17 [debug] config of node                              [39m data={"rejectOnFalse":true,"engine":"basic","calculation":{"group":{"type":"and","calculations":[{"calculator":"equal","operands":["{{$context.data.manager_approval}}","approved"]},{"calculator":"equal","operands":["{{$context.data.hr_approval}}","approved"]}]}}}
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [condition] for node (57) finished as status: 1[39m 
+[34m2024-10-04 15:11:17 [debug] result of node                              [39m data=true
+[34m2024-10-04 15:11:17 [debug] run next node (59)                          [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [update] for node (59)[39m 
+[34m2024-10-04 15:11:17 [debug] config of node                              [39m data={"usingAssignFormSchema":true,"assignFormSchema":{"_isJSONSchemaObject":true,"version":"2.0","name":"sh58ochp4ce","type":"void","x-component":"Grid","x-initializer":"assignFieldValuesForm:configureFields","properties":{"pwcujj7mrkd":{"_isJSONSchemaObject":true,"version":"2.0","type":"void","x-component":"Grid.Row","properties":{"6eublyjbmjj":{"_isJSONSchemaObject":true,"version":"2.0","type":"void","x-component":"Grid.Col","properties":{"leave_status":{"_isJSONSchemaObject":true,"version":"2.0","type":"string","name":"leave_status","title":"Leave Status","x-toolbar":"FormItemSchemaToolbar","x-settings":"fieldSettings:FormItem","x-component":"AssignedField","x-decorator":"FormItem","x-collection-field":"leaves.leave_status","x-component-props":{"style":{"width":"100%"}}}},"name":"6eublyjbmjj"}},"name":"pwcujj7mrkd"}}},"collection":"leaves","params":{"individualHooks":false,"filter":{"$and":[{"id":{"$eq":"{{$context.data.id}}"}}]},"values":{"leave_status":"approved"}}}
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [update] for node (59) finished as status: 1[39m 
+[34m2024-10-04 15:11:17 [debug] result of node                              [39m data=1
+[34m2024-10-04 15:11:17 [debug] branch ended at node (59)                   [39m 
+[34m2024-10-04 15:11:17 [debug] not on main, recall to parent entry node (59)})[39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [parallel] for node (55)[39m 
+[34m2024-10-04 15:11:17 [debug] config of node                              [39m data={"mode":"any"}
+[32m2024-10-04 15:11:17 [info]  execution (29) run instruction [parallel] for node (55) finished as status: 1[39m 
+[34m2024-10-04 15:11:17 [debug] result of node                              [39m data=[1,null]
+[34m2024-10-04 15:11:17 [debug] branch ended at node (55)                   [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) exiting with status 1        [39m 
+[32m2024-10-04 15:11:17 [info]  execution (29) finished with status: 1      [39m execution={"id":29,"context":{"data":{"createdAt":"2024-10-04T07:10:43.396Z","updatedAt":"2024-10-04T07:11:17.031Z","leave_start":"2024-10-15","id":8,"leave_end":"2024-10-17","leave_reason":null,"f_c0hqqeccj69":1,"manager_approval":"approved","hr_approval":"approved","createdById":1,"updatedById":4,"leave_status":null,"f_ik5jludznp0":1}},"key":"hyxyfublqa3","eventKey":"535abd21-f654-44b1-bbd5-382969ab92ac","status":1,"workflowId":11,"updatedAt":"2024-10-04T07:11:17.068Z","createdAt":"2024-10-04T07:11:17.038Z"}

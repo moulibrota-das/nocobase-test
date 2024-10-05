@@ -1,0 +1,31 @@
+[32m2024-10-03 17:55:45 [info]  new event triggered, now events: 2          [39m 
+[34m2024-10-03 17:55:45 [debug] event data:                                 [39m context={"data":{"createdAt":"2024-10-03T09:55:44.997Z","updatedAt":"2024-10-03T09:55:45.001Z","id":7,"approval_status":"approved","f_w86ybs4flgx":3,"createdById":1,"updatedById":1}}
+[32m2024-10-03 17:55:45 [info]  preparing execution for event               [39m 
+[32m2024-10-03 17:55:45 [info]  execution of workflow 1 created as 7        [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) fetched from db               [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) starting...                   [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [parallel] for node (4)[39m 
+[34m2024-10-03 17:55:45 [debug] config of node                              [39m data={"mode":"race"}
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [aggregate] for node (10)[39m 
+[34m2024-10-03 17:55:45 [debug] config of node                              [39m data={"aggregator":"count","associated":false,"params":{"field":"approval_status","filter":{"$and":[{"leave_id":{"id":{"$eq":"{{$context.data.f_w86ybs4flgx}}"}}},{"approval_status":{"$eq":"approved"}}]}},"collection":"approvals"}
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [aggregate] for node (10) finished as status: 1[39m 
+[34m2024-10-03 17:55:45 [debug] result of node                              [39m data=2
+[34m2024-10-03 17:55:45 [debug] run next node (13)                          [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [condition] for node (13)[39m 
+[34m2024-10-03 17:55:45 [debug] config of node                              [39m data={"rejectOnFalse":true,"engine":"basic","calculation":{"group":{"type":"and","calculations":[{"calculator":"equal","operands":["{{$jobsMapByNodeKey.4cj5ylyftq0}}","2"]}]}}}
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [condition] for node (13) finished as status: 1[39m 
+[34m2024-10-03 17:55:45 [debug] result of node                              [39m data=true
+[34m2024-10-03 17:55:45 [debug] run next node (11)                          [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [update] for node (11)[39m 
+[34m2024-10-03 17:55:45 [debug] config of node                              [39m data={"usingAssignFormSchema":true,"assignFormSchema":{"_isJSONSchemaObject":true,"version":"2.0","name":"7a8nqy45201","type":"void","x-component":"Grid","x-initializer":"assignFieldValuesForm:configureFields","properties":{"f48r5p1edoo":{"_isJSONSchemaObject":true,"version":"2.0","type":"void","x-component":"Grid.Row","properties":{"t8qziqf8mfv":{"_isJSONSchemaObject":true,"version":"2.0","type":"void","x-component":"Grid.Col","properties":{"leave_status":{"_isJSONSchemaObject":true,"version":"2.0","type":"string","name":"leave_status","title":"Leave Status","x-toolbar":"FormItemSchemaToolbar","x-settings":"fieldSettings:FormItem","x-component":"AssignedField","x-decorator":"FormItem","x-collection-field":"leaves.leave_status","x-component-props":{"style":{"width":"100%"}}}},"name":"t8qziqf8mfv"}},"name":"f48r5p1edoo"}}},"collection":"leaves","params":{"individualHooks":false,"filter":{"$and":[{"id":{"$eq":"{{$context.data.f_w86ybs4flgx}}"}}]},"values":{"leave_status":"approved"}}}
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [update] for node (11) finished as status: 1[39m 
+[34m2024-10-03 17:55:45 [debug] result of node                              [39m data=1
+[34m2024-10-03 17:55:45 [debug] branch ended at node (11)                   [39m 
+[34m2024-10-03 17:55:45 [debug] not on main, recall to parent entry node (11)})[39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [parallel] for node (4)[39m 
+[34m2024-10-03 17:55:45 [debug] config of node                              [39m data={"mode":"race"}
+[32m2024-10-03 17:55:45 [info]  execution (7) run instruction [parallel] for node (4) finished as status: 1[39m 
+[34m2024-10-03 17:55:45 [debug] result of node                              [39m data=[1,null]
+[34m2024-10-03 17:55:45 [debug] branch ended at node (4)                    [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) exiting with status 1         [39m 
+[32m2024-10-03 17:55:45 [info]  execution (7) finished with status: 1       [39m execution={"id":7,"createdAt":"2024-10-03T09:55:45.025Z","updatedAt":"2024-10-03T09:55:45.070Z","key":"y8wqaz0nymx","eventKey":"7eda3f34-d759-41b0-842a-14cb205d473f","context":{"data":{"createdAt":"2024-10-03T09:55:44.997Z","updatedAt":"2024-10-03T09:55:45.001Z","id":7,"approval_status":"approved","f_w86ybs4flgx":3,"createdById":1,"updatedById":1}},"status":1,"workflowId":1,"workflow":{"id":1,"createdAt":"2024-10-03T07:23:43.931Z","updatedAt":"2024-10-03T09:55:45.030Z","key":"y8wqaz0nymx","title":"Leave status update","enabled":true,"description":null,"type":"collection","triggerTitle":null,"config":{"mode":3,"appends":[],"changed":["approval_status"],"condition":{"$and":[]},"collection":"approvals"},"executed":1,"allExecuted":1,"current":true,"sync":false,"options":{"deleteExecutionOnStatus":[]}}}

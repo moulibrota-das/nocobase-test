@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "@my-project/plugin-hello/client": [
+        "packages/plugins/@my-project/plugin-hello/src/client"
+      ],
+      "@my-project/plugin-hello/package.json": [
+        "packages/plugins/@my-project/plugin-hello/package.json"
+      ],
+      "@my-project/plugin-hello": [
+        "packages/plugins/@my-project/plugin-hello/src"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[31m2024-10-01 14:12:17 [error] Application main is not installed, Please run 'yarn nocobase install' command first[39m stack=Error: Application main is not installed, Please run 'yarn nocobase install' command first
+    at _AppCommand.<anonymous> (/Users/moulibrotadas/Coding/my-nocobase-app/node_modules/@nocobase/server/lib/commands/start.js:75:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async _AppCommand.parseAsync (/Users/moulibrotadas/Coding/my-nocobase-app/node_modules/@nocobase/server/node_modules/commander/lib/command.js:935:5)
+    at async _AsyncEmitter.runAsCLI (/Users/moulibrotadas/Coding/my-nocobase-app/node_modules/@nocobase/server/lib/application.js:506:23) module=application app=main reqId=73be2a04-aec0-464b-856e-9aee2bf07efc dataSourceKey=main
+[31m2024-10-01 14:14:31 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=app submodule=getLang method=check app=main reqId=7cbf7c18-8fa3-42c6-8e7c-8fcffd0fb1d5 dataSourceKey=main
+[31m2024-10-01 14:14:31 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=pm submodule=listEnabled method=check app=main reqId=7edcff38-1114-4136-9d9a-ebdfe1bc8848 dataSourceKey=main
+[31m2024-10-01 14:14:31 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=auth submodule=check method=check app=main reqId=94d6d0d0-de87-4138-b07d-2d32b208a37e dataSourceKey=main
+[31m2024-10-01 14:14:31 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=systemSettings submodule=get/1 method=check app=main reqId=e6ad09dd-52b7-4bac-9d71-652c7890d22e dataSourceKey=main
+[31m2024-10-01 14:14:31 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=app submodule=getInfo method=check app=main reqId=1c1299b6-a64f-4453-b149-84d6ca903327 dataSourceKey=main
+[31m2024-10-01 14:14:32 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=authenticators submodule=publicList method=check app=main reqId=b3bf8dec-2091-4f6f-8116-2d6b18381229 dataSourceKey=main
+[31m2024-10-01 14:14:35 [error] {"name":"JsonWebTokenError","message":"invalid signature"}[39m module=auth submodule=signIn method=check app=main reqId=a8a77888-56ad-473d-94ea-c87769999740 dataSourceKey=main

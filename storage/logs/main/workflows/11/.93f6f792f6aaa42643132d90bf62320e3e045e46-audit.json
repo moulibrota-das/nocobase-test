@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/workflows/11/.93f6f792f6aaa42643132d90bf62320e3e045e46-audit.json",
+    "files": [
+        {
+            "date": 1727956581834,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/workflows/11/2024-10-03.log",
+            "hash": "f8a4fba71611febf6eebd227f06adc0eb88d54163c5c758b1fc72bf97d4f58f7"
+        },
+        {
+            "date": 1728025854262,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/workflows/11/2024-10-04.log",
+            "hash": "c9175384d4cf4c8ee78b1513c0ef420da0274716b9000d91503afe832c94a05f"
+        }
+    ],
+    "hashType": "sha256"
+}

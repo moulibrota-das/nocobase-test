@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/.5fd702c8562f012e07ec5e8f98cce7b982607b10-audit.json",
+    "files": [
+        {
+            "date": 1727763214338,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/2024-10-01.log",
+            "hash": "e68f98258c3aad20888e6efc9ced42c212265f28f79c5910116bdf82d589e5f0"
+        },
+        {
+            "date": 1727845523392,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/2024-10-02.log",
+            "hash": "9e2075ae4f1f324a3ef55a09a36ed52157d580ba71a68f1f23415045bc51165f"
+        },
+        {
+            "date": 1727936029739,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/2024-10-03.log",
+            "hash": "c2fdf11ddc4d82600e7bf5c924ba4851a396e17df6822345f6c2494e58c6aac9"
+        },
+        {
+            "date": 1728040735925,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/2024-10-04.log",
+            "hash": "abddb378d2f94e0ee855d38bac01303e60f74d9d09d4557cbefe072c2c3e5199"
+        },
+        {
+            "date": 1728147168126,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/notification-manager/2024-10-06.log",
+            "hash": "866121d5072eda6c66e2e86a4a3dd8c9c7aa5f0c090c05e97b0d18a5447c022e"
+        }
+    ],
+    "hashType": "sha256"
+}

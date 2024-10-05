@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/.668a02a3e1649a62659822b78c5d2b1e3bc992fd-audit.json",
+    "files": [
+        {
+            "date": 1727763137429,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/system_error_2024-10-01.log",
+            "hash": "851cad4191e64dee509bc36fcb7e3f11fb7ac9fd0435b7a8a9d1dd76e9426963"
+        },
+        {
+            "date": 1727845522485,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/system_error_2024-10-02.log",
+            "hash": "3768340211557419b7db510476fe5b2cb27ab3a836c5302ceed08c85bba6f3aa"
+        },
+        {
+            "date": 1727934426260,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/system_error_2024-10-03.log",
+            "hash": "f56aa5506d132d3c296996ccb776bb58f94b0c62a7250ab1aa3a95925290b8e1"
+        },
+        {
+            "date": 1728030606141,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/system_error_2024-10-04.log",
+            "hash": "9d8fa8c8c04b3542c375399133b89e52ab3722a99439e0345c9ac5c3cb4f8093"
+        },
+        {
+            "date": 1728147167514,
+            "name": "/Users/moulibrotadas/Coding/my-nocobase-app/storage/logs/main/system_error_2024-10-06.log",
+            "hash": "80161648e0f86c663fc8fba27e2ce1caf15ab8188918635aa7303a29638ad961"
+        }
+    ],
+    "hashType": "sha256"
+}
